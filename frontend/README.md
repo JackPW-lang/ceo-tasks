@@ -14,7 +14,7 @@ Make sure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/JackPW-lang/ceo-tasks.git
 cd ceo-tasks
 ```
 
@@ -49,7 +49,7 @@ To stop the app press **Ctrl+C**.
 
 ## Usage
 
-1. Navigate to http://localhost:8080
+1. Once the app is running, navigate to http://localhost:8080
 2. Answer the security question: **When do you want it?**
    - Answer: **NOW!**
 3. Type a task and press **Enter** to add it
