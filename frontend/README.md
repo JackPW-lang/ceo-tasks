@@ -1,0 +1,65 @@
+# CEO Task Planner
+
+A lightweight task planning application built with NestJS, MongoDB, and Vue.js.
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org) (v18 or higher)
+- [MongoDB Community Server](https://www.mongodb.com/try/download/community) (via Homebrew recommended)
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone 
+cd ceo-tasks
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+npm install --prefix backend --legacy-peer-deps
+npm install --prefix frontend
+```
+
+### 3. Start MongoDB
+
+```bash
+brew services start mongodb-community
+```
+
+## Running the App
+
+From the root `ceo-tasks` folder:
+
+```bash
+npm run dev
+```
+
+This starts both the backend and frontend simultaneously in a single terminal.
+
+- Backend runs on http://localhost:3000
+- Frontend runs on http://localhost:8080
+
+To stop the app press **Ctrl+C**.
+
+## Usage
+
+1. Navigate to http://localhost:8080
+2. Answer the security question: **When do you want it?**
+   - Answer: **NOW!**
+3. Type a task and press **Enter** to add it
+4. Check the box next to a task to mark it complete
+5. All tasks remain visible whether completed or not
+
+## Design Decisions
+
+- **No session/token management** — given the single-user nature of the app, auth is handled as a simple client-side state flag after the answer is verified
+- **Enter to submit** — no buttons required, optimized for rapid task entry as requested
+- **MongoDB persistence** — all tasks survive server restarts and are consistent across devices
+- **concurrently** — both backend and frontend start and stop with a single command, minimizing installation and startup effort
+- **Minimal dependencies** — NestJS + Mongoose on the backend, Vue + Axios on the frontend
