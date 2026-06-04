@@ -1,10 +1,10 @@
 # CEO Task Planner
 
-A lightweight task planning application built with NestJS, MongoDB, and Vue.js.
+Ultra-lightweight task planning application built with NestJS, MongoDB, and Vue.js.
 
 ## Prerequisites
 
-Make sure you have the following installed:
+Ensure the following are installed.
 
 - [Node.js](https://nodejs.org) (v18 or higher)
 - [MongoDB Community Server](https://www.mongodb.com/try/download/community) (via Homebrew recommended)
@@ -58,8 +58,8 @@ To stop the app press **Ctrl+C**.
 
 ## Design Decisions
 
-- **No session/token management** — given the single-user nature of the app, auth is handled as a simple client-side state flag after the answer is verified
-- **Enter to submit** — no buttons required, optimized for rapid task entry as requested
-- **MongoDB persistence** — all tasks survive server restarts and are consistent across devices
-- **concurrently** — both backend and frontend start and stop with a single command, minimizing installation and startup effort
-- **Minimal dependencies** — NestJS + Mongoose on the backend, Vue + Axios on the frontend
+- **No session/token management** — given the single-user nature, auth is handled as a simple client side state flag after the answer is verified.
+- **Enter to submit** — no buttons required, which helps to achieve the rapid and successive addition of tasks.
+- **MongoDB persistence** — all tasks survive server restarts and are consistent across devices.
+- **concurrently** — both backend and frontend start and stop with a single command.
+- **Minimal dependencies** — NestJS + Mongoose on the backend, Vue on the frontend.
